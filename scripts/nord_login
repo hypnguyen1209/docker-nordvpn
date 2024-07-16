@@ -17,17 +17,17 @@ then
 fi
 
 ## only token is viable in a container
-nordvpn logout --persist-token > /dev/null 2>&1
-if [[ -n ${TOKEN} ]]
-then
-  nordvpn login --token "${TOKEN}" > /dev/null || {
-    echo -e "$(date "+%F %T%z")\tWARNING\tInvalid token."
-    exit 1
-  }
-else
-    echo -e "$(date "+%F %T%z")\tWARNING\tA token must be provided; only tokens are supported."
-    exit 1
-fi
+## nordvpn logout --persist-token > /dev/null 2>&1
+## if [[ -n ${TOKEN} ]]
+## then
+##   nordvpn login --token "${TOKEN}" > /dev/null || {
+##     echo -e "$(date "+%F %T%z")\tWARNING\tInvalid token."
+##     exit 1
+##   }
+## else
+##     echo -e "$(date "+%F %T%z")\tWARNING\tA token must be provided; only tokens are supported."
+##     exit 1
+## fi
 ## Clear sensitive variables
-echo "Login successful; connection now in progress..."
-exit 0
+## echo "Login successful; connection now in progress..."
+## exit 0
