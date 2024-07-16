@@ -1,9 +1,7 @@
-ARG UBUNTU_VER
-FROM ubuntu:${UBUNTU_VER}
-ARG UBUNTU_VER
+FROM ubuntu:latest
 ARG NORDVPN_VERSION
 ARG TARGETARCH
-LABEL org.opencontainers.image.base.name="ubuntu:${UBUNTU_VER}"
+LABEL org.opencontainers.image.base.name="ubuntu:latest"
 LABEL org.opencontainers.image.description DESCRIPTION
 LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.source=https://github.com/tmknight/docker-nordvpn
